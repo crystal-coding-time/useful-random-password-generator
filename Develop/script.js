@@ -28,10 +28,22 @@ if (uppercase) {
   passwordSelection += passwordStringInput.upperAlpha;
 };
 
+var numeric = window.confirm("Do you want numbers?");
+if (numeric) {
+  passwordSelection += passwordStringInput.numbers;
+};
 
+var specialSymbols = window.confirm("Do you want special characters?");
+if (specialSymbols) {
+  passwordSelection += passwordStringInput.symbols;
+};
 
+var password = "";
+for (let i = 0; i < length; i++) {
+  password += passwordSelection[Math.floor(Math.random() * passwordSelection.length)]
+}
   
-return "Generated password will go Here!"; // This is what returns ther password to the HTML password ID
+return password; // This is what returns ther password to the HTML password ID
 }
 
 // Write password to the #password input
