@@ -1,34 +1,37 @@
 // These are the varibles for the passwords 
 
-var lowerAlpha = "abcdefghijklmnopqrstuvwxyz";
-var upperAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var numbers = "0123456789";
-var symbols = "!@#$%^&*_-+=";
+const passwordStringInput = {
+lowerAlpha: "abcdefghijklmnopqrstuvwxyz",
+upperAlpha: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+numbers: "0123456789",
+symbols: "!@#$%^&*_-+=",
+};
 
 // Assignment Code
+
 var generateBtn = document.querySelector("#generate");
 
 function generatePassword() {
-  console.log("Hehehe I have been CLICKED!"); // This allows me to test the function to determine that I have an output
+console.log("Hehehe I have been CLICKED!"); // This allows me to test the function to determine that I have an output
+var passwordSelection = "";
   
-  /*
-  I want a popup that asks how long the password should be, and limits the input to 8 to 128
-If a user enters in a number less than 8 or greater then 128 an error message is displayed 
+var length = window.prompt("How long do you want your password to be? Please choose between 8 and 128 characters long.");
+console.log(length);
 
-// (Maybe an if/else statement? Nested in a function?) 
-I want a popup box that asks the user if they want lower case alpha characters (yes/no)
-I want a popup box that asks the user if they want uppercase alpha characters (yes/no)
-I want a popup box that asks the user if they want numeric characters (yes/no)
-I want a popup box that asks if they want unique characters (yes/no)
+var lowercase = window.confirm("Do you want lowercase characters?"); 
+if (lowercase) {
+  passwordSelection += passwordStringInput.lowerAlpha;
+};
 
-A minimum of one option must be selected 
+var uppercase = window.confirm("Do you want uppercase characters?");
+if (uppercase) {
+  passwordSelection += passwordStringInput.upperAlpha;
+};
 
-I want to display a randomized selection of alpha/numeric/special characters based on user input that is the desired length 
 
-I want that to display via HTML
-  */
+
   
-  return "Generated password will go Here!"; // This is what returns ther password to the HTML password ID
+return "Generated password will go Here!"; // This is what returns ther password to the HTML password ID
 }
 
 // Write password to the #password input
