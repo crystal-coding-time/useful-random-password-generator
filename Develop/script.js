@@ -16,6 +16,13 @@ console.log("Hehehe I have been CLICKED!"); // This allows me to test the functi
 var passwordSelection = "";
   
 var length = window.prompt("How long do you want your password to be? Please choose between 8 and 128 characters long.");
+
+
+if (length < 8 || length > 128) { //This is what terminates the function if they fail to pick a number between 8 and 128
+ window.confirm("Please choose a number between 8 and 128");
+ return;
+} else 
+
 console.log(length);
 
 var lowercase = window.confirm("Do you want lowercase characters?"); 
