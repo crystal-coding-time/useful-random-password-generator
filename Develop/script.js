@@ -6,7 +6,7 @@ upperAlpha: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
 numbers: "0123456789",
 symbols: "!@#$%^&*_-+=",
 };
-
+ 
 // Assignment Code
 
 var generateBtn = document.querySelector("#generate");
