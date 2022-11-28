@@ -8,7 +8,7 @@ I added JavaScript to the supplied HTML and CSS code.
 
 ## Website URL
 
-My website can be accessed [here](https://crystal-coding-time.github.io/personal-portfolio/)
+My website can be accessed [here](https://crystal-coding-time.github.io/useful-random-password-generator/)
 
 ## Authors
 
@@ -18,7 +18,7 @@ My website can be accessed [here](https://crystal-coding-time.github.io/personal
 ## Preview 
 
 A preview of the site can be found below:
-![Screenshot of website](./assets/images/Screenshot-Personal-Portfolio.png "Website Screenshot")
+![Screenshot of website](./Assets/screenshot-of-password-generator%20.png "Website Screenshot")
 
 ## Credits
 
